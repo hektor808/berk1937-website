@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -12,14 +16,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     
     <!-- Ana Stil Dosyası -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
 </head>
 <body>
 
     <!-- YAŞ DOĞRULAMA EKRANI (SPLASH SCREEN) -->
     <div id="age-gate">
         <div class="age-gate-content">
-            <img src="images/logo.svg" alt="BERK 1937 Logo" class="age-gate-logo">
+            <img src="{{ site.baseurl }}/images/logo.svg" alt="BERK 1937 Logo" class="age-gate-logo">
             <h2>BERK 1937 Dünyasına Hoş Geldiniz</h2>
             <p>Devam etmek için 18 yaşından büyük olduğunuzu onaylayın. <br> Sitemiz alkollü içki ve tütün ürünleri hakkında bilgi içermektedir.</p>
             <button id="confirm-age-btn">18 Yaşından Büyüğüm</button>
@@ -30,7 +34,7 @@
     <header class="main-header">
         <div class="container">
             <a href="index.html" class="logo">
-                <img src="images/logo.svg" alt="BERK 1937 Tekel Shop Logo">
+                <img src="{{ site.baseurl }}/images/logo.svg" alt="BERK 1937 Tekel Shop Logo">
             </a>
             <nav class="main-nav">
                 <ul>
@@ -52,15 +56,15 @@
                 </ul>
             </nav>
             <div class="header-actions">
-                <button class="icon-btn"><img src="images/icon-search.svg" alt="Arama"></button>
-                <button class="icon-btn"><img src="images/icon-bag.svg" alt="Sepet"><span>0</span></button>
+                <button class="icon-btn"><img src="{{ site.baseurl }}/images/icon-search.svg" alt="Arama"></button>
+                <button class="icon-btn"><img src="{{ site.baseurl }}/images/icon-bag.svg" alt="Sepet"><span>0</span></button>
             </div>
         </div>
     </header>
 
     <main>
         <!-- HERO BÖLÜMÜ -->
-        <section class="hero" style="background-image: url('images/hero-background.jpg');">
+        <section class="hero" style="background-image: url('{{ site.baseurl }}/images/hero-background.jpg');">
             <div class="hero-overlay"></div>
             <div class="container hero-content">
                 <h1 class="fade-in">1937'den Gelen Gelenek,<br>Günümüzün Zevkiyle Buluşuyor.</h1>
@@ -74,28 +78,28 @@
             <div class="container">
                 <div class="category-grid">
                     <a href="urun-detay.html" class="category-card">
-                        <img src="images/viski.png" alt="Haftanın Viskisi">
+                        <img src="{{ site.baseurl }}/images/viski.png" alt="Haftanın Viskisi">
                         <div class="card-content">
                             <h3>Haftanın Viskisi</h3>
                             <p>İsli ve Karakterli</p>
                         </div>
                     </a>
                     <a href="#" class="category-card">
-                        <img src="images/sarap.png" alt="Kavımızın Gözdesi">
+                        <img src="{{ site.baseurl }}/images/sarap.png" alt="Kavımızın Gözdesi">
                         <div class="card-content">
                             <h3>Kavımızın Gözdesi</h3>
                             <p>Kadifemsi Dokunuş</p>
                         </div>
                     </a>
                     <a href="#" class="category-card">
-                        <img src="images/puro.png" alt="Yeni Gelen Purolar">
+                        <img src="{{ site.baseurl }}/images/puro.png" alt="Yeni Gelen Purolar">
                         <div class="card-content">
                             <h3>Yeni Gelenler</h3>
                             <p>Küba'dan Esintiler</p>
                         </div>
                     </a>
                     <a href="#" class="category-card">
-                        <img src="images/hediye.png" alt="Özel Hediye Setleri">
+                        <img src="{{ site.baseurl }}/images/hediye.png" alt="Özel Hediye Setleri">
                         <div class="card-content">
                             <h3>Hediye Setleri</h3>
                             <p>Unutulmaz Anlar İçin</p>
@@ -106,7 +110,7 @@
         </section>
         
         <!-- HİKAYEMİZ (PARALLAX BÖLÜMÜ) -->
-        <section class="our-story" style="background-image: url('images/parallax-bg.jpg');">
+        <section class="our-story" style="background-image: url('{{ site.baseurl }}/images/parallax-bg.jpg');">
             <div class="container">
                 <h2>1937'den Beri Aynı Tutkuyla...</h2>
                 <p>Biz sadece satıcı değil, birer hikaye anlatıcısıyız. Her şişenin, her puronun bir geçmişi var. Gelin bu mirasa ortak olun.</p>
@@ -196,6 +200,6 @@
     </footer>
 
     <!-- JavaScript Dosyası -->
-    <script src="js/main.js"></script>
+    <script src="{{ site.baseurl }}/js/main.js"></script>
 </body>
 </html>

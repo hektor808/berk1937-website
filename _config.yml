@@ -1,0 +1,8 @@
+# Site Ayarları
+title: BERK 1937 Tekel Shop
+description: "BERK 1937, özenle seçilmiş viski, şarap, puro ve gurme lezzetler koleksiyonu sunan, köklü bir içki ve tütün kültürü mabedidir."
+url: "https://hektor808.github.io"
+baseurl: "/berk1937-website"
+
+# Build ayarları
+markdown: kramdown
