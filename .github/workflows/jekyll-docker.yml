@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 name Jekyll site CI
 
 on
@@ -18,3 +19,25 @@ jobs
         docker run 
         -v ${{ github.workspace }}srvjekyll -v ${{ github.workspace }}_sitesrvjekyll_site 
         jekyllbuilderlatest binbash -c chmod -R 777 srvjekyll && jekyll build --future
+=======
+name: Jekyll site CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build the site in the jekyll/builder container
+      run: |
+        docker run \
+        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+        jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+>>>>>>> 08fe87562028b213da171f0cd0576a684282a148
