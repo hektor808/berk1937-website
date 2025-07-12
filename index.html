@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BERK 1937 Tekel Shop - 1937'den Gelen Miras</title>
+    <meta name="description" content="BERK 1937, özenle seçilmiş viski, şarap, puro ve gurme lezzetler koleksiyonu sunan, köklü bir içki ve tütün kültürü mabedidir.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Ana Stil Dosyası -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- YAŞ DOĞRULAMA EKRANI (SPLASH SCREEN) -->
+    <div id="age-gate">
+        <div class="age-gate-content">
+            <img src="images/logo.svg" alt="BERK 1937 Logo" class="age-gate-logo">
+            <h2>BERK 1937 Dünyasına Hoş Geldiniz</h2>
+            <p>Devam etmek için 18 yaşından büyük olduğunuzu onaylayın. <br> Sitemiz alkollü içki ve tütün ürünleri hakkında bilgi içermektedir.</p>
+            <button id="confirm-age-btn">18 Yaşından Büyüğüm</button>
+        </div>
+    </div>
+
+    <!-- HEADER (ÜST BİLGİ) -->
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.svg" alt="BERK 1937 Tekel Shop Logo">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Anasayfa</a></li>
+                    <li class="dropdown">
+                        <a href="#">Ürünlerimiz</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Damıtılmış Lezzetler (Viski, Cin...)</a></li>
+                            <li><a href="#">Üzümün Mirası (Şaraplar)</a></li>
+                            <li><a href="#">Zanaatkar Dokunuşu (Biralar)</a></li>
+                            <li><a href="#">Tütün Sanatı (Purolar)</a></li>
+                            <li><a href="#">Aksesuarlar & Gurme</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">1937'den Gelen Miras</a></li>
+                    <li><a href="#">Günlük</a></li>
+                    <li><a href="#">Etkinlikler</a></li>
+                    <li><a href="#">İletişim</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="icon-btn"><img src="images/icon-search.svg" alt="Arama"></button>
+                <button class="icon-btn"><img src="images/icon-bag.svg" alt="Sepet"><span>0</span></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO BÖLÜMÜ -->
+        <section class="hero" style="background-image: url('images/hero-background.jpg');">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1 class="fade-in">1937'den Gelen Gelenek,<br>Günümüzün Zevkiyle Buluşuyor.</h1>
+                <p class="fade-in">Yılların birikimiyle özenle seçilmiş koleksiyonumuzu keşfedin.</p>
+                <a href="#" class="btn btn-primary fade-in">Koleksiyonu Keşfet</a>
+            </div>
+        </section>
+
+        <!-- ÖNE ÇIKAN KATEGORİLER -->
+        <section class="featured-categories">
+            <div class="container">
+                <div class="category-grid">
+                    <a href="urun-detay.html" class="category-card">
+                        <img src="images/viski.png" alt="Haftanın Viskisi">
+                        <div class="card-content">
+                            <h3>Haftanın Viskisi</h3>
+                            <p>İsli ve Karakterli</p>
+                        </div>
+                    </a>
+                    <a href="#" class="category-card">
+                        <img src="images/sarap.png" alt="Kavımızın Gözdesi">
+                        <div class="card-content">
+                            <h3>Kavımızın Gözdesi</h3>
+                            <p>Kadifemsi Dokunuş</p>
+                        </div>
+                    </a>
+                    <a href="#" class="category-card">
+                        <img src="images/puro.png" alt="Yeni Gelen Purolar">
+                        <div class="card-content">
+                            <h3>Yeni Gelenler</h3>
+                            <p>Küba'dan Esintiler</p>
+                        </div>
+                    </a>
+                    <a href="#" class="category-card">
+                        <img src="images/hediye.png" alt="Özel Hediye Setleri">
+                        <div class="card-content">
+                            <h3>Hediye Setleri</h3>
+                            <p>Unutulmaz Anlar İçin</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- HİKAYEMİZ (PARALLAX BÖLÜMÜ) -->
+        <section class="our-story" style="background-image: url('images/parallax-bg.jpg');">
+            <div class="container">
+                <h2>1937'den Beri Aynı Tutkuyla...</h2>
+                <p>Biz sadece satıcı değil, birer hikaye anlatıcısıyız. Her şişenin, her puronun bir geçmişi var. Gelin bu mirasa ortak olun.</p>
+                <a href="#" class="btn btn-secondary">Hikayemizi Okuyun</a>
+            </div>
+        </section>
+
+        <!-- BLOG BÖLÜMÜ -->
+        <section class="blog-preview">
+            <div class="container">
+                <div class="section-header">
+                    <h2>BERK 1937 Günlüğü</h2>
+                    <p>Tadım notları, rehberler ve sektörden haberler.</p>
+                </div>
+                <div class="blog-grid">
+                    <article class="blog-post">
+                        <img src="https://via.placeholder.com/400x250/333/666?text=Blog+Görseli" alt="Blog Post 1">
+                        <div class="post-content">
+                            <h3>Yeni Başlayanlar İçin Viski Rehberi</h3>
+                            <p>Viski dünyasına ilk adımı atarken bilmeniz gereken her şey...</p>
+                            <a href="#">Devamını Oku &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="blog-post">
+                        <img src="https://via.placeholder.com/400x250/333/666?text=Blog+Görseli" alt="Blog Post 2">
+                        <div class="post-content">
+                            <h3>Doğru Puro Seçimi ve Saklama Koşulları</h3>
+                            <p>Purolarınızı taze tutmanın ve en iyi lezzeti almanın sırları...</p>
+                            <a href="#">Devamını Oku &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="blog-post">
+                        <img src="https://via.placeholder.com/400x250/333/666?text=Blog+Görseli" alt="Blog Post 3">
+                        <div class="post-content">
+                            <h3>Şarap ve Peynir: Mükemmel Uyum Rehberi</h3>
+                            <p>Unutulmaz bir gurme deneyimi için hangi şarap hangi peynirle...</p>
+                            <a href="#">Devamını Oku &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER (ALT BİLGİ) -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>BERK 1937</h4>
+                    <p>Kalite, gelenek ve tutkuyla seçilmiş lezzetlerin adresi. 1937'den beri hizmetinizde.</p>
+                    <div class="social-media">
+                        <a href="#">IG</a> <a href="#">FB</a> <a href="#">TW</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="#">Hakkımızda</a></li>
+                        <li><a href="#">Ürünler</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Müşteri Hizmetleri</h4>
+                    <ul>
+                        <li><a href="#">Sıkça Sorulan Sorular</a></li>
+                        <li><a href="#">"Tıkla & Gel Al" Koşulları</a></li>
+                        <li><a href="#">KVKK Aydınlatma Metni</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>E-Bülten</h4>
+                    <p>Özel tadımlardan ve yeni ürünlerden ilk siz haberdar olun.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="E-posta adresiniz">
+                        <button type="submit">&rarr;</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BERK 1937 Tekel Shop. Tüm Hakları Saklıdır.</p>
+                <p class="legal-warning"><strong>UYARI:</strong> Alkollü içkilerin satışı ve tüketimi 18 yaşından küçüklere yasaktır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Dosyası -->
+    <script src="js/main.js"></script>
+</body>
+</html>

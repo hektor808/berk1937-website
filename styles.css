@@ -1,0 +1,87 @@
+/* --- TEMEL AYARLAR VE DEĞİŞKENLER --- */
+:root {
+    --bg-color: #121212; /* Neredeyse siyah, zengin bir arkaplan */
+    --surface-color: #1E1E1E; /* Kartlar ve bölümler için biraz daha açık bir ton */
+    --primary-text-color: #E0E0E0; /* Ana metin rengi */
+    --secondary-text-color: #A0A0A0; /* Daha az önemli metinler */
+    --accent-color: #D4AF37; /* Eskitilmiş altın/bronz vurgu rengi */
+    --border-color: #333333;
+
+    --font-primary: 'Playfair Display', serif; /* Başlıklar için */
+    --font-secondary: 'Lato', sans-serif; /* Paragraflar için */
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-text-color);
+    font-family: var(--font-secondary);
+    line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-...xt-color);
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+.quantity-selector span {
+    padding: 0 1rem;
+    font-size: 1.2rem;
+}
+
+.product-actions .btn {
+    flex-grow: 1;
+}
+
+.product-accordion .accordion-item {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.accordion-header {
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding: 1rem 0;
+    color: var(--primary-text-color);
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+.accordion-header::after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+.accordion-header.active::after {
+    transform: rotate(45deg);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+    color: var(--secondary-text-color);
+    padding: 0 1rem;
+}
+.accordion-content ul {
+    list-style-position: inside;
+}
