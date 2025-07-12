@@ -5,14 +5,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const confirmAgeBtn = document.getElementById('confirm-age-btn');
 
     // Eğer kullanıcı daha önce onayladıysa (sessionStorage kullanarak) tekrar sorma
-    if (sessionStorage.getItem('isAgeVerified') === 'true') {
-        ageGate.classList.add('hidden');
-    }
+if (localStorage.getItem('isAgeVerified') === 'true') {
+    ageGate.classList.add('hidden');
+}
 
-    confirmAgeBtn.addEventListener('click', () => {
-        sessionStorage.setItem('isAgeVerified', 'true');
-        ageGate.classList.add('hidden');
-    });
+confirmAgeBtn.addEventListener('click', () => {
+    localStorage.setItem('isAgeVerified', 'true');
+    ageGate.classList.add('hidden');
+});
 
 
     // --- ÜRÜN DETAY SAYFASI AKORDİYON MENÜ ---

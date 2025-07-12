@@ -34,10 +34,11 @@ body {
 }
 
 h1, h2, h3 {
-    font-...xt-color);
+    font-family: var(--font-primary); /* Başlıklar için tanımlanan değişken kullanıldı */
+    color: var(--primary-text-color); /* Metin rengi eklendi */
     font-size: 1.5rem;
     padding: 0 1rem;
-    cursor: pointer;
+    cursor: pointer; /* Bu özellik burada gereksiz olabilir, duruma göre kaldırılabilir */
 }
 .quantity-selector span {
     padding: 0 1rem;
