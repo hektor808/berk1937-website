@@ -1,0 +1,20 @@
+name Jekyll site CI
+
+on
+  push
+    branches [ main ]
+  pull_request
+    branches [ main ]
+
+jobs
+  build
+
+    runs-on ubuntu-latest
+
+    steps
+    - uses actionscheckout@v4
+    - name Build the site in the jekyllbuilder container
+      run 
+        docker run 
+        -v ${{ github.workspace }}srvjekyll -v ${{ github.workspace }}_sitesrvjekyll_site 
+        jekyllbuilderlatest binbash -c chmod -R 777 srvjekyll && jekyll build --future
